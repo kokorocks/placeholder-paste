@@ -1,22 +1,3 @@
-/*let old;
-document.addEventListener("focusin", (event) => {
-
-    // Check if the focused element is an input field
-    if (target.tagName === "INPUT") {
-        const target = event.target;
-        if (old == target) {
-            return;
-        }
-        const placeholder = target.getAttribute("placeholder");
-
-        // If the input has a placeholder, alert it
-        if (placeholder) {
-            alert(`This input's placeholder is: "${placeholder}"`);
-        }
-    }
-    old = target;
-});*/
-
 // Listen for keypress event to trigger alert with placeholder
 document.addEventListener("keydown", (event) => {
     if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.code === "Space") {
